@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 2px;
+}
+
+html {
+  font-size: 10px;
+  background-color: #ffffff;
+}
+
+p {
+  color: #737373;
+  font-size: 1.7rem;
+}
+
+blockquote {
+  color: #8DA633;
+  font-size: 1.5rem;
+}
+
+body {
+
+  background: linear-gradient(0deg, #E1F7EB 72%, #F4F5F4 73%);
+}
+
+
+#player {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* NAVBAR */
+
+@keyframes background {
+
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 100%;
+  }
+
+}
+
+.navbar {
+
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
+  padding: 7px;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #04BF45, #FFDB55, #F2766B, #F0EEBE, #70B6DF);
+  background-size: 500% 100%;
+  animation-name: background;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  margin-top: -70px;
+}
+
+.navbar__logo {
+  max-width: 100px;
+}
+
+.navbar__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar__nav {
+  font-size: 17px;
+  color: #fff;
+  display: flex;
+}
+
+
+.navbar__nav>li {
+  margin: 0 16px;
+  font-weight: bold;
+}
+
+.img-responsive {}
+
+/* -------------------------------------------------------------------------------- */
+
+
+/* HEADER */
+
+
+.header-logo {
+  min-height: 602px;
+  width: 1362px;
+  background-size: cover;
+  background-image: url;
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* SECAO Maravilhosa */
+
+.container-main {
+  max-width: 1173px;
+  margin: 86px 312px;
+  background-color: white;
+  position: relative;
+  padding-top: 160px;
+
+}
+
+.container-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #ED7C6E;
+  font-family: Elsie;
+  padding-bottom: 66px;
+}
+
+
+.minibio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding: 100px;
+
+}
+
+.img-bio-responsive {
+  width: 173px;
+  height: 183px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+.minibio p {
+  width: 80%;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 20px 50px 10px 10px;
+  color: #084010;
+}
+
+.citacao {
+  font-size: 2rem;
+  border: 2px solid #04BF45;
+  margin: 50px;
+  line-height: 30px;
+  margin: 100px auto;
+  padding: 80px;
+  max-width: 929px;
+  height: 282px;
+
+}
+
+h3 {
+  color: #04BF45;
+  font-family: Elsie;
+  font-style: italic;
+  font-size: 46px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 200px;
+  margin-top: 100px;
+
+}
+
+.container1 p {
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  padding-bottom: 10px;
+  margin-left: 100px;
+  color: #084010;
+
+}
+
+.container1-img {
+  margin-left: 10px;
+}
+
+
+.container2-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.container2-reverse p {
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  color: #084010;
+}
+
+
+
+
+/* AUTORA */
+
+.container-autora{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #04BF45;
+  margin-bottom: 200px;
+  margin: 100px 40px 200px 40px;
+  padding: 20px;
+}
+
+.autora-img{
+  width: 10%;
+}
+
+
+
+/* --- BOTAO --- */
+
+.btn{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.rodape{
+  background-color: #8DA633;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* MEDIA QUERY */
