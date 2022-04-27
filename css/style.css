@@ -44,7 +44,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -73,7 +72,7 @@ body {
   position: fixed;
   width: 100%;
   height: 80px;
-  background: linear-gradient(to right, #04BF45, #FFDB55, #F2766B, #F0EEBE, #70B6DF);
+  background: linear-gradient(to right, #04BF45, #FFDB55, #F2766B, #F0EEBE, #70B6DF, #04BF45, #FFDB55, #F2766B, #F0EEBE, #70B6DF);
   background-size: 500% 100%;
   animation-name: background;
   animation-duration: 7s;
@@ -107,7 +106,6 @@ body {
   font-weight: bold;
 }
 
-.img-responsive {}
 
 /* -------------------------------------------------------------------------------- */
 
@@ -119,7 +117,6 @@ body {
   min-height: 602px;
   width: 1362px;
   background-size: cover;
-  background-image: url;
   display: block;
   margin: auto;
   margin-top: 70px;
@@ -134,7 +131,7 @@ body {
   margin: 86px 312px;
   background-color: white;
   position: relative;
-  padding-top: 160px;
+  padding-top: 20px;
 
 }
 
@@ -147,6 +144,7 @@ body {
   color: #ED7C6E;
   font-family: Elsie;
   padding-bottom: 66px;
+  margin-top: 70px;
 }
 
 
@@ -154,7 +152,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 100px;
   padding: 100px;
 
 }
@@ -178,7 +175,6 @@ body {
 .citacao {
   font-size: 2rem;
   border: 2px solid #04BF45;
-  margin: 50px;
   line-height: 30px;
   margin: 100px auto;
   padding: 80px;
@@ -188,23 +184,23 @@ body {
 }
 
 h3 {
-  color: #04BF45;
+  color: #8DA633;
   font-family: Elsie;
   font-style: italic;
   font-size: 46px;
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .container1 {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 200px;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
   margin-top: 100px;
-
 }
 
 .container1 p {
@@ -214,6 +210,8 @@ h3 {
   padding-bottom: 10px;
   margin-left: 100px;
   color: #084010;
+  width: 50%;
+  min-width: 250px;
 
 }
 
@@ -222,13 +220,12 @@ h3 {
 }
 
 
-.container2-reverse {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row-reverse;
-  margin-bottom: 100px;
-  margin-top: 100px;
+.container2-reverse {  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .container2-reverse p {
@@ -236,27 +233,50 @@ h3 {
   text-align: left;
   line-height: 30px;
   padding-bottom: 10px;
-  margin-right: 10px;
+  margin-left: 100px;
   color: #084010;
+  width: 50%;
+  min-width: 250px;
 }
 
+.container3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.container3 p{
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  padding-bottom: 10px;
+  color: #084010;
+  width: 50%;
+  min-width: 250px;
+  margin-top: 100px;
+}
 
 /* AUTORA */
 
-.container-autora{
+.container-autora {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border: 2px solid #04BF45;
   margin-bottom: 200px;
-  margin: 100px 40px 200px 40px;
+  margin: 100px 40px 100px 40px;
   padding: 20px;
+  font-size: 15px;
 }
 
-.autora-img{
+.container-autora a:hover {
+  color: #04BF45;
+  transition-duration: 0.3s;
+}
+
+.autora-img {
   width: 10%;
 }
 
@@ -264,25 +284,87 @@ h3 {
 
 /* --- BOTAO --- */
 
-.btn{
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 16px;
-  border-radius: 5px;
-  font-size: 14px;
+.botao {
+  background: linear-gradient(to right, #d9aaf8, #a56bf2, #6300b4);
+  background-size: 500% 100%;
+  );
+  border: none;
+  border-radius: 15px;
+  padding: 1px 15px;
+  margin-left: 750px;
+  margin-right: 750px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-size: 500% 100%;
+  animation-name: background;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
+.botao p {
+  color: #fff;
+}
+
+.botao:hover p {
+  color: #d9aaf8;
+  font-style: bold;
+  font-style: oblique;
+  transition-duration: 0.5s;
+}
 
 /* FOOTER */
 
-.rodape{
-  background-color: #8DA633;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+.rodape {
+  background-color: #323534;
+  color: white;
+  margin-top: 100px;
 }
+
+.rodape__principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rodape__principal>* {
+  margin: 16px 0;
+}
+
+.rodape__navegacao>li {
+  font-size: 14px;
+  margin: 8px;
+}
+
+.rodape__navegacao a {
+  transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+  color: #c083b9;
+}
+
+.rodape__logo {
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape__cc {
+  width: 100%;
+  background-color: #292a2a;
+  font-size: 14px;
+  opacity: 0.5;
+  text-align: center;
+  padding: 10px;
+}
+
+/* --- FOOTER --- */
+
+
+
+
 
 /* MEDIA QUERY */
